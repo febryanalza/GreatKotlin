@@ -8,6 +8,8 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.greatkotlin.R
 import com.google.android.material.button.MaterialButton
+import com.example.greatkotlin.ui.fragments.popup.LoginDialogFragment
+import com.example.greatkotlin.ui.fragments.popup.RegisterDialogFragment
 
 class AccountFragment:Fragment(){
     override fun onCreateView(

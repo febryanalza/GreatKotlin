@@ -1,4 +1,4 @@
-package com.example.greatkotlin.ui.fragments
+package com.example.greatkotlin.ui.fragments.popup
 
 import android.os.Bundle
 import android.view.LayoutInflater
