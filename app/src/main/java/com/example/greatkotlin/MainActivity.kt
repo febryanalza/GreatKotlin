@@ -2,6 +2,8 @@ package com.example.greatkotlin
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -16,6 +18,7 @@ import com.example.greatkotlin.ui.theme.GreatKotlinTheme
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.example.greatkotlin.ui.fragments.HomeFragment
 import com.example.greatkotlin.ui.fragments.SearchFragment
 import com.example.greatkotlin.ui.fragments.AddFragment
@@ -43,6 +46,13 @@ class MainActivity : AppCompatActivity() {
             fragment?.let { loadFragment(it) }
             true
         }
+        val toolbar : Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+        val logo: ImageView = findViewById(R.id.logo)
+        val appname :TextView = findViewById(R.id.app_name)
+        val love: ImageView = findViewById(R.id.love_icon)
+        val chat : ImageView = findViewById(R.id.chat_icon)
     }
     private fun loadFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction()
